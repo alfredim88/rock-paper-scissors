@@ -109,6 +109,11 @@
   border: 3px solid black;
   margin: 20px;
   float: left;
+  cursor: pointer;
+}
+
+.button-shape:hover {
+  background-color: #8b0000;
 }
 
 .icons {

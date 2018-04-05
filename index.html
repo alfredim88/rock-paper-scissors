@@ -5,6 +5,7 @@
   <head>
     <meta charset="utf-8">
     <title>rock-paper-scissors</title>
+    <link rel="shortcut icon" href="rock.png" />
     <link rel="stylesheet" href="./style/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </header>
@@ -30,13 +31,13 @@
 
       <div class="playerWeapon">
         <div class="chosenWeapon">
-          <img src="./images/rock.png" alt="No Weapon" width= 90%>
+          <img id="playerWeaponImage" src="./images/rock.png" alt="No Weapon" width= 90%>
         </div>
       </div>
 
       <div class="computerWeapon">
         <div class="chosenWeapon">
-          <img src="./images/rock.png" alt="No Weapon" width= 90%>
+          <img id="pcWeaponImage" src="./images/rock.png" alt="No Weapon" width= 90%>
         </div>
 
         </div>
@@ -44,13 +45,13 @@
     <div class="resultContainer">
       <div class="playerScore">
         <div class="vertical-header">
-          <h3>SCORE: <span id="playerScoreCounter">0</span> </h3>
+          <h3>SCORE: <span id="playerScorePlaceholder"></span> </h3>
         </div>
 
       </div>
       <div class="computerScore">
         <div class="vertical-header">
-          <h3>SCORE: <span id="playerScoreCounter">0</span> </h3>
+          <h3>SCORE: <span id="computerScorePlaceholder">0</span> </h3>
         </div>
       </div>
     </div>
@@ -67,15 +68,15 @@
     </div>
   <div class="buttons-center">
 
-    <div class="button-shape">
+    <div class="button-shape" id="rockbtn" onclick="playerWeaponRock()">
       <img class="icons" src="./images/rock.png" alt="rock">
     </div>
 
-    <div class="button-shape">
+    <div class="button-shape" id="paperbtn" onclick="playerWeaponPaper()">
       <img class="icons" src="./images/paper.png" alt="paper">
     </div>
 
-    <div class="button-shape">
+    <div class="button-shape" id="scissorsbtn" onclick="playerWeaponScissors()">
       <img class="icons" src="./images/scissors.png" alt="scissors">
     </div>
   </div>
